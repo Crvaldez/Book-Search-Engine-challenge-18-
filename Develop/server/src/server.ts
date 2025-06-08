@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'node:path';
 import db from './config/connection.js';
 import routes from './routes/index.js';
-
+import { authMiddleware} from './utils/auth.js';
 const app = express();
 const PORT = process.env.PORT || 3001;
 
